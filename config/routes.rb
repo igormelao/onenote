@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   post '/tags/:title/add_to_note/:note_id', to: 'tags#add_to_note'
   delete '/tags/:title/remove_from_note/:note_id', to: 'tags#remove_from_note'
+
+  root :to => "notes#index"
 end
